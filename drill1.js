@@ -57,7 +57,26 @@ function personMaker() {
         return person;
   }
 
-
-
+  const sampleObj = {
+    foo: 'foo',
+    bar: 'bar',
+    bizz: 'bizz',
+    bang: 'bang',
+  };
   
+  function keyDeleter(obj) {
+    delete obj.foo
+    delete obj.bar
+    return obj
+  }
+
+  (function testKeyDeleter() {
+    var obj = keyDeleter({
+      foo: 'foo',
+      bar: 'bar',
+      bizz: 'bizz',
+      bang: 'bang',
+    });
+  
+
 
