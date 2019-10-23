@@ -1,16 +1,16 @@
 'use strict '
-const testData = [
-    { name: 'Jane Doe', grade: 'A' },
-    { name: 'John Dough', grade: 'B' },
-    { name: 'Jill Do', grade: 'A' },
-  ];
-function makeStudentsReport(data) {
-    let studentReport = data.map(function(student){
-        return `${student.name}: ${student.grade}`
-    });
-    return studentReport;
-}
-console.log(makeStudentsReport(testData));
+// const testData = [
+//     { name: 'Jane Doe', grade: 'A' },
+//     { name: 'John Dough', grade: 'B' },
+//     { name: 'Jill Do', grade: 'A' },
+//   ];
+// function makeStudentsReport(data) {
+//     let studentReport = data.map(function(student){
+//         return `${student.name}: ${student.grade}`
+//     });
+//     return studentReport;
+// }
+// console.log(makeStudentsReport(testData));
 //   const studentData = [
 //     {
 //       name: 'Tim',
@@ -39,15 +39,21 @@ console.log(makeStudentsReport(testData));
      
 // }
 // enrollInSummerSchool(studentData);
-//   const scratchData = [
-//     { id: 22, foo: 'bar' },
-//     { id: 28, foo: 'bizz' },
-//     { id: 19, foo: 'bazz' },
-//   ];
+  const scratchData = [
+    { id: 22, foo: 'bar' },
+    { id: 28, foo: 'bizz' },
+    { id: 19, foo: 'bazz' },
+  ];
   
-//   function findById(items, idNum) {
-//     // your code here
-//   }
+  function findById(items, idNum) {
+    let item = items.map(function(item){
+        if(item.id === idNum){
+            return item;
+        }
+    });
+    return item;
+  }
+  console.log(findById(scratchData, 28));
 //   const objectA = {
 //     id: 2,
 //     name: 'Jane Doe',
