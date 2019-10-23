@@ -56,5 +56,11 @@
 //     return hero;
 // }
 // console.log(identifyHeroes(superHeroes));
+let code = [ {characterA : 'r'}, {characterB : 'o'}, {characterC : 'f'}, {characterD : 'p'}, {characterM : 'l'}, ] 
+let value = code.characterA; console.log(value);
 
+function decode (codeData){
+    let encodedData = codeData.map(function(data){
+        if(data.characterA === )
+    })
 
