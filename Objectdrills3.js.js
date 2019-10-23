@@ -63,4 +63,31 @@ function decode (codeData){
     let encodedData = codeData.map(function(data){
         if(data.characterA === )
     })
+let superHeroes = [
+   { name: 'Clark Kent',
+    jobTitle:'Reporter',
+    boss: "Bruce Wayne"
+},
 
+ {
+    name: 'Bruce Wayne',
+    jobTitle:'Designated BoneBreaker'
+},
+ {
+    name: "Sonic the Hedgehog",
+    jobTitle:"GO FAST!",
+    boss: "Bruce Wayne"
+},
+];
+function identifyHeroes(data){
+    let hero = data.map(function(data){
+        if(data.boss === undefined) {
+          return `${data.jobTitle} ${data.name} doesn't report to anybody.`; 
+        }else { 
+            return `${data.name} reports to ${data.boss} as ${data.jobTitle}`;  
+        }
+    });
+    return hero;
+}
+let finalResult = loaf.hydration();
+console.log(finalResult);
