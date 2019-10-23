@@ -1,4 +1,4 @@
-const createMyObject = function() {
+/*const createMyObject = function() {
     foo, 
     answerToUniverse,
     'olly olly' : 'oxen free';
@@ -21,3 +21,24 @@ const createMyObject = function() {
 }
 
 console.log(createMyObject);
+
+*/
+
+function updateObject(obj){
+    
+        obj.foo = 'foo',
+        obj.bar = 'bar',
+        obj.bizz = 'bizz',
+        obj.bang = 'bang'
+    return obj
+};
+
+let cat = {
+    foo: 'bam',
+    bar: 'foo',
+    bizz: 'fizz',
+    bang: 'tang'
+};
+
+console.log(updateObject(cat));
+
