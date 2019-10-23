@@ -1,6 +1,7 @@
-function makeStudentsReport(data) {
+'use strict '
+// function makeStudentsReport(data) {
     
-}
+// }
   const studentData = [
     {
       name: 'Tim',
@@ -20,35 +21,42 @@ function makeStudentsReport(data) {
   ];
   
   function enrollInSummerSchool(students) {
-  }
-
-  const scratchData = [
-    { id: 22, foo: 'bar' },
-    { id: 28, foo: 'bizz' },
-    { id: 19, foo: 'bazz' },
-  ];
+    let makeStudent = students.map(function(student){
+        student.status = 'Enrolled in summer school'
+        return student;
+     });
+     console.log(makeStudent);
+     return makeStudent;
+     
+}
+enrollInSummerSchool(studentData);
+//   const scratchData = [
+//     { id: 22, foo: 'bar' },
+//     { id: 28, foo: 'bizz' },
+//     { id: 19, foo: 'bazz' },
+//   ];
   
-  function findById(items, idNum) {
-    // your code here
-  }
-  const objectA = {
-    id: 2,
-    name: 'Jane Doe',
-    age: 34,
-    city: 'Chicago',
-  };
+//   function findById(items, idNum) {
+//     // your code here
+//   }
+//   const objectA = {
+//     id: 2,
+//     name: 'Jane Doe',
+//     age: 34,
+//     city: 'Chicago',
+//   };
   
-  // running the function with `objectB` and `expectedKeys`
-  // should return `false`
-  const objectB = {
-    id: 3,
-    age: 33,
-    city: 'Peoria',
-  };
+//   // running the function with `objectB` and `expectedKeys`
+//   // should return `false`
+//   const objectB = {
+//     id: 3,
+//     age: 33,
+//     city: 'Peoria',
+//   };
   
-  const expectedKeys = ['id', 'name', 'age', 'city'];
+//   const expectedKeys = ['id', 'name', 'age', 'city'];
   
-  function validateKeys(object, expectedKeys) {
-    // your code goes here
+//   function validateKeys(object, expectedKeys) {
+//     // your code goes here
   
-  }
+//   }
