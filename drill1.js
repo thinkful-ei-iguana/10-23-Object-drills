@@ -78,5 +78,3 @@ function personMaker() {
       bang: 'bang',
     });
   
-
-
