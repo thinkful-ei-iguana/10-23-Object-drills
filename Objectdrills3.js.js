@@ -29,7 +29,41 @@
 // }
 // let timeOfMeal = food.meals[3];
 // console.log(timeOfMeal);
-/*let superHeroes = [
+// let superHeroes = [
+//    { name: 'Clark Kent',
+//     jobTitle:'Reporter',
+//     boss: "Bruce Wayne"
+// },
+
+//  {
+//     name: 'Bruce Wayne',
+//     jobTitle:'Designated BoneBreaker'
+// },
+//  {
+//     name: "Sonic the Hedgehog",
+//     jobTitle:"GO FAST!",
+//     boss: "Bruce Wayne"
+// },
+// ];
+// function identifyHeroes(data){
+//     let hero = data.map(function(data){
+//         if(data.boss === undefined) {
+//           return `${data.jobTitle} ${data.name} doesn't report to anybody.`; 
+//         }else { 
+//             return `${data.name} reports to ${data.boss} as ${data.jobTitle}`;  
+//         }
+//     });
+//     return hero;
+// }
+// console.log(identifyHeroes(superHeroes));
+let code = [ {characterA : 'r'}, {characterB : 'o'}, {characterC : 'f'}, {characterD : 'p'}, {characterM : 'l'}, ] 
+let value = code.characterA; console.log(value);
+
+function decode (codeData){
+    let encodedData = codeData.map(function(data){
+        if(data.characterA === )
+    })
+let superHeroes = [
    { name: 'Clark Kent',
     jobTitle:'Reporter',
     boss: "Bruce Wayne"
